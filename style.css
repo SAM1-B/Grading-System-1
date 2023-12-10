@@ -1,0 +1,145 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    overflow: hidden;
+}
+
+#house{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+  background-color: rgb(5, 4, 51);
+  flex-direction: column;
+}
+#house h3{
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+#checkBtn{
+    margin-top: 30px;
+    padding: 10px 0;
+}
+button{
+    border: 0;
+    background-color: rgb(158, 104, 4);
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    transition: .7s ease;
+
+}
+button:hover{
+    background-color: rgb(119, 77, 15);
+    color: white;
+}
+input{
+    cursor: pointer;
+}
+#display{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.boxes{
+    display: flex;
+    
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15{
+  margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+     position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-play-state: running; 
+}
+.box2{
+    left: 100px;
+    animation-delay: .5s;
+}
+.box3{
+    left: 200px;
+    animation-delay: 2s;
+}
+.box4{
+    left: 300px;
+    animation-delay: 5s;
+}
+.box5{
+    left: 400px;
+    animation-delay: 3s;
+}
+.box6{
+    left: 500px;
+    animation-delay: 2s;
+}
+.box7{
+    left: 600px;
+    animation-delay: 3s;
+}
+.box8{
+    left: 700px;
+    animation-delay: 1s;
+}
+.box9{
+    left: 800px;
+    animation-delay: .4s;
+}
+.box10{
+    left: 900px;
+    animation-delay: 1s;
+}
+.box12{
+    left: 1000px;
+    animation-delay: 4s;
+}
+.box13{
+    left: 1100px;
+    animation-delay: 1s;
+}
+.box14{
+    left: 1200px;
+    animation-delay: 2s;
+}
+.box15{
+    left: 1300px;
+    animation-delay: 3s;
+}
+@keyframes box {
+    0%{
+     bottom:0;
+     background-color: rgb(255, 238, 0);
+    }
+    20%{
+        bottom:20%;
+        rotate: 0deg;
+       }
+     40%{
+        bottom:40%;
+        background-color: rgb(25, 0, 255);
+        rotate: 0deg;
+       }
+    60%{
+        bottom:60%;
+       }
+    80%{
+        bottom:80%;
+        rotate: 360deg;
+       }
+   100%{
+      bottom: 100%;
+        background-color: red;
+    }
+}
